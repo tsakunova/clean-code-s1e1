@@ -49,10 +49,10 @@ li,
     list-style:none;
 }
 input,
-.button {
+.btn {
     outline:none;
 }
-.button {
+.btn {
     background: none;
     border: 0px;
     color: #888;
@@ -61,7 +61,7 @@ input,
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-.button:hover {
+.btn:hover {
     color: #3a3a3a;
 }
 /* Heading */
@@ -101,7 +101,7 @@ input#new-task_input {
 }
 
 /* Task list */
-.incomplete-tasks_item, .completed-tasks_item {
+.tasks_item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -110,17 +110,14 @@ input#new-task_input {
     justify-content: space-between;
     align-items: center;
 }
-.incomplete-tasks_item > *,
-.completed-tasks_item > * {
+.tasks_item > * {
     vertical-align: middle;
 }
 
-.incomplete-tasks_item > .checkbox,
-.completed-tasks_item > .checkbox {
+.tasks_item > .checkbox {
     margin: 0 10px;
 }
-.incomplete-tasks_item > .label,
-.completed-tasks_item > .label {
+.tasks_item > .label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
@@ -129,12 +126,12 @@ input#new-task_input {
 li > .input-text {
     width: 226px
 }
-.button.delete img {
+.btn.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.button.delete img:hover {
+.btn.delete img:hover {
     transform: rotateZ(0);
 }
 
@@ -145,18 +142,18 @@ li > .input-text {
 }
 
 /* Edit Task */
-.main_incomplete-tasks .incomplete-tasks_item .input-text,
-.main_completed-tasks .completed-tasks_item .input-text {
+.main_incomplete-tasks .tasks_item .input-text,
+.main_completed-tasks .tasks_item .input-text {
     display:none;
 }
 
-.main_incomplete-tasks .incomplete-tasks_item.editMode .input-text,
-.main_completed-tasks .completed-tasks_item.editMode .input-text {
+.main_incomplete-tasks .tasks_item.edit-mode .input-text,
+.main_completed-tasks .tasks_item.edit-mode .input-text {
     display:inline-block;
     width:224px;
 }
 
-.main_incomplete-tasks .incomplete-tasks_item.editMode .label,
-.main_completed-tasks .completed-tasks_item.editMode .label {
+.main_incomplete-tasks .tasks_item.edit-mode .label,
+.main_completed-tasks .tasks_item.edit-mode .label {
     display:none;
 }
