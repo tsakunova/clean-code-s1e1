@@ -29,7 +29,7 @@
     width: 500px;
     margin: 0 auto 0;
 }
-.task_item-style {
+.input-style {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
@@ -49,10 +49,10 @@ li,
     list-style:none;
 }
 input,
-.task_button {
+.button {
     outline:none;
 }
-.task_button {
+.button {
     background: none;
     border: 0px;
     color: #888;
@@ -61,7 +61,7 @@ input,
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-.task_button:hover {
+.button:hover {
     color: #3a3a3a;
 }
 /* Heading */
@@ -129,12 +129,12 @@ input#new-task_input {
 li > .input-text {
     width: 226px
 }
-.task_button.delete img {
+.button.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.task_button.delete img:hover {
+.button.delete img:hover {
     transform: rotateZ(0);
 }
 
